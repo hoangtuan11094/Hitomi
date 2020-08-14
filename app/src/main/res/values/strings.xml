@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">HITOMI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="msgLoading">LOADING&#8230;</string>
+
+    <string name="msgBellON">→ 通知音を使用します</string>
+    <string name="msgBellOFF">→ 通知音を使用しません</string>
+
+    <string name="msgVibrateON">→ バイブレーションを使用します</string>
+    <string name="msgVibrateOFF">→ バイブレーションを使用しません</string>
+
+    <string name="msgSpeedON">→ 車速連動機能を使用します</string>
+    <string name="msgSpeedOFF">→ 車速連動機能を使用しません</string>
+
+    <string name="msgDrivingDetectionON">→ わき見運転を検出します</string>
+    <string name="msgDrivingDetectionOFF">→ わき見運転を検出しません</string>
+    <string name="lblFunctionSettingsHeader">ひとみちゃん機能設定</string>
+    <string name="lblBack">戻る</string>
+    <string name="lblNotificationTone">通知音</string>
+    <string name="lblOff">OFF</string>
+    <string name="lblOn">ON</string>
+    <string name="lblTut">アプリの基本動作を設定します\n音とバイブレーションはAndroidの設定に従います</string>
+    <string name="lblVibrateNotification">バイブレーション通知</string>
+    <string name="lblVehicleSpeedLinkFunction">車速連動機能\n(車速信号の接続が必要です)</string>
+    <string name="lblInitialSettingsHeader">ひとみちゃん初期設定</string>
+    <string name="lblVolumeSetting">ひとみちゃん本体の音量設定</string>
+    <string name="lblSensitivity">居眠り運転の検出感度</string>
+    <string name="lblDrivingDetection">わき見運転検出</string>
+    <string name="lblFirmwareVersion">本体ファームウェアのバージョン</string>
+    <string name="lblDeviceScanHeader">デバイススキャン</string>
+    <string name="lblStatus">通信：</string>
+    <string name="lblConnection">接続</string>
+    <string name="lblSetHitomi">ひとみちゃんを設定する</string>
+    <string name="lblSettingsMenu">ひとみちゃん設定メニュー</string>
+    <string name="lblInitialSetting">初期設定</string>
+    <string name="lblFunctionSetting">機能設定</string>
+    <string name="lblConnecting">接続中</string>
+    <string name="lblDisconnected">未接続</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B2B2B</color>
+    <color name="colorPrimaryDark">#3C3F41</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorTrans">#00FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray2">#B1B0B0</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#989898</color>
+    <color name="colorGray3">#D1D1D1</color>
+    <color name="colorOrange">#FF5722</color>
+
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorGreen2">#4BD663</color>
+    <color name="colorRed">#E91E63</color>
+    <color name="colorYellow">#dbd804</color>
+    <color name="colorYellow2">#FFEB3B</color>
+    <color name="colorBlue">#1E88E5</color>
+
+    <color name="clSWTrackDefault">#D0CECE</color>
+    <color name="clSWTrackChecked">#9DC3E6</color>
+    <color name="clSWThumDefault">#808080</color>
+    <color name="clSWThumChecked">#008CD6</color>
+</resources>

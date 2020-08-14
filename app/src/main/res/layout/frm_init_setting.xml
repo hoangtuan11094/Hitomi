@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".fragments.FrmInitSetting">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTopBar"
+        style="@style/TopBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/LabelTitleTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/lblInitialSettingsHeader"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/ButtonBackTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clTopBar">
+
+
+        <RadioGroup
+            android:id="@+id/rgVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/bg_radio_group"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_1sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rbV0"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_left"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="0"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rbV1"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rbV2"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rbV3"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rbV4"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/LabelTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/lblVolumeSetting"
+            app:layout_constraintBottom_toTopOf="@+id/rgVolume"
+            app:layout_constraintStart_toStartOf="@+id/rgVolume" />
+
+        <RadioGroup
+            android:id="@+id/rgSensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/bg_radio_group"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_1sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgVolume">
+
+            <RadioButton
+                android:id="@+id/rbS1"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rbS2"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rbS3"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/radio_bg_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@drawable/text_color"
+                app:buttonCompat="@null" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/LabelTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/lblSensitivity"
+            app:layout_constraintBottom_toTopOf="@+id/rgSensitivity"
+            app:layout_constraintStart_toStartOf="@+id/rgSensitivity" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rgSensitivity"
+            app:layout_constraintTop_toBottomOf="@+id/rgSensitivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSw1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvON"
+                    style="@style/LabelTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:text="@string/lblOn"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swAtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:thumb="@drawable/switch_thumb"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvON"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:track="@drawable/switch_track" />
+
+                <TextView
+                    android:id="@+id/tvOFF"
+                    style="@style/LabelTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:text="@string/lblOff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/swAtt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDrivingDetection"
+                    style="@style/LabelTheme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblDrivingDetection"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvOFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvAttCheck"
+                style="@style/LabelNoticeTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clSw1" />
+
+            <TextView
+                android:id="@+id/tvLabelFirmware"
+                style="@style/LabelTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/lblFirmwareVersion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAttCheck" />
+
+            <TextView
+                android:id="@+id/tvVer"
+                style="@style/LabelNoticeTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLabelFirmware" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+rootProject.name='Hitomi'
+include ':app'
+include ':hitomilib'

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TopBarTheme">
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+    <style name="LabelTheme">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="LabelTitleTheme">
+        <item name="android:textColor">@color/colorGray2</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LabelNoticeTheme">
+        <item name="android:textColor">@color/colorYellow2</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="ButtonBackTheme">
+        <item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_width">@dimen/_40sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:background">@drawable/bg_button_gray</item>
+        <item name="android:text">@string/lblBack</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+</resources>

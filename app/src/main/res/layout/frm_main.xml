@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".fragments.FrmMain">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:background="@drawable/color_top_nav"
+        android:id="@+id/rlTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_22sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+           />
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/vLine1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#BDBDBD"
+        app:layout_constraintTop_toBottomOf="@+id/rlTopBar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clStatus"
+        android:background="@drawable/color_top_nav2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/vLine1">
+
+        <TextView
+            android:id="@+id/tvLbStatus"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/lblStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:textColor="@color/colorRed"
+            app:layout_constraintStart_toEndOf="@+id/tvLbStatus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/_14sdp"
+            android:text="未接続"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnDevice"
+            android:text="@string/lblConnection"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_button_blue"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/vLine2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#BDBDBD"
+        app:layout_constraintTop_toBottomOf="@+id/clStatus" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@+id/clStatus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:textColor="@color/colorYellow"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/lblSetHitomi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/bg_button_black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_16sdp"
+            android:background="@drawable/bg_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/btnSetting"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
